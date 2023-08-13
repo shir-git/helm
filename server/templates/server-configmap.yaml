@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: server-configmap
+  namespace: {{ .Values.namespace }}
+data:
+  server_service_ip: {{ .Values.service.externalIP }}

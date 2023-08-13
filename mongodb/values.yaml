@@ -1,0 +1,10 @@
+# Default values for mongodb.
+
+namespace: shir
+
+labels:
+  app: mongodb
+
+PersistentVolumeClaim:
+  name: data-pvc
+  storage: 1000Mi

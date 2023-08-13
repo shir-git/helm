@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client-deployment
+  namespace: {{ .Values.namespace }}
+  labels:
+    app: {{ .Values.labels.app }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.labels.app }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.labels.app }}
+    spec:
+      containers:
+      - name: client-pod  
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}" 
+        ports:
+        - containerPort: 8081
+        env:
+        - name: REACT_APP_SERVER_SERVICE_IP 
+          valueFrom:
+            configMapKeyRef:
+              name: server-configmap
+              key: server_service_ip

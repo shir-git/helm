@@ -1,0 +1,14 @@
+# Default values for server.
+
+namespace: shir
+
+labels:
+  app: server
+
+image:
+  repository: paasshir2/server
+  tag: 0.5
+
+service:
+  targetPort: 3000
+  externalIP: 20.93.43.135
