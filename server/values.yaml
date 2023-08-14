@@ -7,7 +7,7 @@ labels:
 
 image:
   repository: paasshir2/server
-  tag: 0.7
+  tag: 0.8
 
 service:
   targetPort: 3000
