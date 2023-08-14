@@ -26,3 +26,13 @@ spec:
             configMapKeyRef:
               name: mongodb-configmap
               key: mongodb_ip
+        - name: REACT_APP_ROOT_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: mongodb-secret
+              key: mongo-root-username
+        - name: REACT_APP_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mongodb-secret
+              key: mongo-root-password

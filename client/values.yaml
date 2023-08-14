@@ -2,7 +2,7 @@
 
 replicaCount: 1
 
-namespace: shir
+namespace: shir2
 
 labels: 
   app: client
@@ -12,7 +12,7 @@ image:
   tag: 0.5
 
 service:
-  port: 80
+  port: 8081
   anodePort: 30004
 
 

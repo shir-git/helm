@@ -1,6 +1,6 @@
 # Default values for mongodb.
 
-namespace: shir
+namespace: shir2
 
 labels:
   app: mongodb
