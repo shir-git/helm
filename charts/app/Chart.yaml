@@ -25,10 +25,10 @@ appVersion: "1.16.0"
 dependencies:
   - name: client
     version: 0.1.0
-    repository: ../client
+    repository: ../../client
   - name: server
     version: 0.1.0
-    repository: ../server
+    repository: ../../server
   - name: mongodb
     version: 0.1.0
-    repository: ../mongodb
+    repository: ../../mongodb
