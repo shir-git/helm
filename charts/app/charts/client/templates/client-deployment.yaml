@@ -23,6 +23,6 @@ spec:
         env:
         - name: REACT_APP_SERVER_SERVICE_IP 
           valueFrom:
-            configMapKeyRef:
-              name: server-configmap
+            secretKeyRef:
+              name: secret-app
               key: server_service_ip
