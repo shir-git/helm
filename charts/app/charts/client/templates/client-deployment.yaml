@@ -24,5 +24,5 @@ spec:
         - name: REACT_APP_SERVER_SERVICE_IP 
           valueFrom:
             secretKeyRef:
-              name: secret-app
+              name: secret-app 
               key: server_service_ip

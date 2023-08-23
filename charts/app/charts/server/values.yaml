@@ -11,8 +11,7 @@ image:
 
 service:
   targetPort: 3000
-  externalIP2: 51.104.152.185
-  externalIP: NTEuMTA0LjE1Mi4xODU=
+  externalIP: 51.104.152.185
 
 secretStore:
-  vaultIP: 20.223.44.64
+  vaultIP: 20.223.77.86
